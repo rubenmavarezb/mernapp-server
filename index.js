@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json({ extended: true }));
 
 //App port, it's assigned by Heroku. In case it doesn't exists, then the port will be 4000
-const port = process.env.port || 4000;
+const port = process.env.PORT || 4000;
 
 //importing routes
 app.use('/api/users', require('./routes/users'));
